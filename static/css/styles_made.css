@@ -1,0 +1,220 @@
+body{
+    background-color: #Fef4e8;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+.links{
+    padding-left: 3rem;
+}
+
+.navbar{
+    background-color: #400E32;
+    height: 8rem;
+}
+
+.nav-item{
+    padding: 0 2rem 0 8rem;
+}
+
+.nav-link{
+    color: #F2921D;
+}
+
+.nav-link:visited{
+    color: #f5b114;
+}
+
+.navbar-brand{
+    padding-left: 5rem;
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    color: #F2921D;
+}
+
+.home{
+    font-size: 27px;
+    font-family: 'Courgette', cursive;
+}
+
+.navbar-brand:hover{
+    /* font-size: 3.1rem; */
+    color: #f2b21d;
+    /* opacity: 0.5; */
+}
+
+.generate-button{
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+
+.container{
+    margin-top: 10rem;
+    min-height: calc(50vh - 40px);
+}
+
+footer{
+    margin: 0;
+    background-color: #400E32;
+    height: 12rem;
+}
+
+.links{
+    padding-top: 2%;
+    margin-left: 40%;
+    margin-right: 40%
+    /* margin: auto; */
+}
+
+.footer-link{
+    /* text-align: center; */
+    height: 10%;
+    color: white;
+}
+
+.btn1{
+    background-color: #400E32;
+    position: relative;
+    bottom: 270px;
+    left: 65px;
+    color: #F2921D;
+    font-size: 24px;
+    margin-right: 8rem;
+    
+}
+
+.btn1:hover{
+    background-color: #F2921D;
+    color: #400E32;
+    box-shadow: 2px 12px 15px #613a0c;
+    transform: translateY(-2px);
+}
+
+th{
+    padding: 0 0 0 5rem;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+}
+
+td{
+    font-weight: 300;
+    font-size: 13px;
+    padding: 2rem 1rem 0 2rem;
+    text-align: center;
+}
+
+.blob{
+    opacity: 0.5;
+    left: 0.1%;
+    height: 700px;
+    width: 700px;
+    position: absolute;
+    top: 17%;
+    z-index: -1;
+}
+
+.fridge{
+    left: 0.1%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    bottom: 120px;
+    z-index: -1;
+}
+
+.company-name{
+    padding-top: 2.5rem;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size : 2rem;
+    color: #e26c7e;
+}
+
+a{
+    color: #e26c7e;
+    text-decoration: inherit;
+}
+
+.fi{
+    padding: 0 1.5rem 0 1rem;
+    font-size: 1.5rem;
+}
+
+.fa-regular{
+    color: #F2921D;
+}
+
+.fridge-image{
+    position: relative;
+    bottom: 50px;
+}
+
+.nav-link-active{
+    color: rgba(255, 255, 0, 0.713);
+}
+
+h1 {
+    color: #F2921D;
+    font-family: monospace;  /* Keeps the content on a single line */
+    margin: 3rem;
+    letter-spacing: .15em; /* Adjust as needed */
+  }
+
+
+  .btn2{
+    background-color: #F2921D;
+    color: #400E32;
+    position: relative;
+    bottom: -40px;
+    font-size: 24px;
+    margin-right: 0;
+  }
+
+  .btn2:hover{
+    background-color: #400E32;
+    color: #F2921D;
+    box-shadow: 2px 12px 15px #999;
+    transform: translateY(-2px);
+  }
+
+  .card{
+    margin: 0 3rem 0 3rem;
+    box-shadow: 2px 12px 15px #999;
+  }
+
+  /* .card:hover{
+    box-shadow: 2px 12px 15px #999;
+    transform: translateY(-2px);
+  } */
+
+  ::placeholder{
+    color: #999;
+    font-weight: 300;
+  }
+
+  .card-title{
+    font-weight:900;
+  }
+
+  .form-label{
+    font-weight: 500;
+  }
+
+  .form-control:hover{
+    background-color: #ffe9b9;
+    color: black;
+  }
+
+.container-form{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  min-height: calc(80vh - 40px);
+
+}
+
+.btn-sub{
+    position: relative;
+    bottom: 4px;
+    left: 230px;
+}

@@ -1,0 +1,102 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1> Test Page</h1>
+{% for recipe,ingredients in output.items %}
+        <img src="{% static '{{ingredients.1}}" />
+	    <h2>{{ recipe|capfirst }}</h2>
+        <a href="{% static '{{ingredients.0|last}}">{{ingredients.0|last}}</a>
+    {% for items in ingredients.0 %}
+        <h3>{{items.name|capfirst}}<h3>
+        <h3>{{items.amount|capfirst}}</h3>
+    {% endfor %}
+{% endfor %}
+</body>
+
+</html>     -->
+
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ichack23</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <link rel="preconnect" href="static 'https://fonts.googleapis.com">
+        <link rel="preconnect" href=https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&family=Space+Mono&display=swap" rel="stylesheet">
+        <link href="vendor/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+        <link rel="stylesheet" href="{% static 'css/styles_made.css' %}">
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href='/'>BetterBefore</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="links">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../"><img src="{% static 'images/house-chimney-crack.svg' %}" alt=""></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../form"><img src="{% static 'images/fridge-svgrepo-com.svg' %}" alt=""></a>
+                  </li>
+                </ul>
+            </div>
+            </div>
+            </div>
+          </nav>
+        <!-- Product section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{image}}" alt="..." /></div>
+                    <div class="col-md-6 col-lg-6">
+                        <a href="{{url}}"><h1 class="fw-bolder">{{name}}</h1></a>
+                        <div class="fs-5 md-5 card h-50" style= "transform: none; box-shadow: none; " >
+                                <h4>Ingredients:</h4>
+                            <ul>
+                                {% for ingredient in recipe %}
+                                {% if ingredient.unit != "" %}
+                                <li><span>{{ingredient.amount}}</span> <span>{{ingredient.unit}}</span> <span>of</span> <span>{{ingredient.name}}</span></li>
+                                {% else %}
+                                <li><span>{{ingredient.amount}}</span> <span>{{ingredient.name}}</span></li>
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                        
+                        </div>
+                        <div class="d-flex">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Related items section-->
+        <!-- Footer-->
+        <footer>
+            <div class="links">
+              <span class="footer-link"><i class="fi fi-brands-github"></i></span>
+              <span class="footer-link"><i class="fi fi-brands-instagram"></i></span>
+              <span class="footer-link"><i class="fi fi-brands-youtube"></i></span>
+            </div>
+            <div class="company-name">
+              <a href="https://ichack.org">ICHack'23 </a> 
+            </div>
+          </footer>
+      
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>

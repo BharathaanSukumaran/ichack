@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterBefore</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="{% static 'css/styles_made.css' %}">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">BetterBefore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="links">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="form"><img src="{% static 'images/shopping-cart.svg' %}" alt=""></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipe"><img src="{% static 'images/restaurant.svg' %}" alt=""></a>
+              </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+      </nav>
+
+
+      <div class="container text-center">
+        <div class="row">
+        <div class="col-lg-6">
+        <img class = "blob" src="{% static 'images/blob1.svg' %}" alt="">
+        <img class = "blob" src="{% static 'images/blob2.svg' %}" alt="">
+        <img class = "fridge" src="{% static 'images/fridge_pink-removebg-preview.png' %}" alt="">
+        
+           <a href="recipe"><button type="button" class="btn btn1">Get Recipes</button></a>
+          </div>
+          <div class="col-lg-6">
+            <div>
+              <h1 id="demo"> </h1>
+              <a href="form"><button type="button" class="btn btn2">Get Started</button></a>
+            </div>
+      </div>
+      </div>
+      </div>
+
+
+    <footer>
+      <div class="links">
+        <span class="footer-link"><i class="fi fi-brands-github"></i></span>
+        <span class="footer-link"><i class="fi fi-brands-instagram"></i></span>
+        <span class="footer-link"><i class="fi fi-brands-youtube"></i></span>
+      </div>
+      <div class="company-name">
+        <a href="https://ichack.org/">ICHack'23 </a> 
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
